@@ -24,13 +24,11 @@ public class Function {
 	}
 
 	public void settJob() {
-		// Job job = new Job("developer", 15000);
 		man.setJob(job);
 		man.setMoney(man.getMoney() + job.getPayment());
 	}
 
 	public void settGold() {
-		// Gold gold = new Gold(7000);
 		man.setGold(gold);
 		man.setMoney(man.getMoney() - gold.getPrice());
 	}
