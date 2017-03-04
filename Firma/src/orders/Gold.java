@@ -4,7 +4,6 @@ public class Gold {
 	private int price;
 
 	public Gold(int price) {
-		super();
 		this.price = price;
 	}
 

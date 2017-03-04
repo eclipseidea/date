@@ -15,4 +15,10 @@ public class Woman extends Human {
 		this.isLove = isLove;
 	}
 
+	@Override
+	public String toString() {
+		return "Woman [isLove=" + isLove + "]";
+	}
+	
+	
 }

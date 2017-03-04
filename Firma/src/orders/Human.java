@@ -59,7 +59,7 @@ public class Human {
 		this.gold = gold;
 	}
 
-	public String getName() {
+	public  String getName() {
 
 		return name;
 	}
@@ -72,6 +72,6 @@ public class Human {
 		
 	}
 
-	
+		
 
 }

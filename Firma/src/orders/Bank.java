@@ -1,12 +1,12 @@
 package orders;
 
 public class Bank {
-    private int money=999999999;
+    private int money;
 
-	public Bank() {
-		super();
+	public Bank(int money) {
+		
+		this.money = money;
 	}
-
 	public int getMoney() {
 		return money;
 	}

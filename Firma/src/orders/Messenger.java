@@ -9,21 +9,21 @@ import java.util.Scanner;
 
 public class Messenger {
 
-	public void manWriteText(Human Human) {
+	public static void manWriteText(Object object) {
 		File text = new File("text.txt");
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("input your text");
+		System.out.println("input your text:");
 		try {
 			PrintWriter writer = new PrintWriter(new BufferedWriter(
 					new FileWriter(text, true)));
-			if (Human.getName().equals("roman")) {
+			if (object  instanceof Man) {
 				String message = scanner.next();
-				writer.println(Human.getName() + " " + Human.getAge());
+				writer.println(((Human) object).getName() + " " + ((Human) object).getAge());
 				writer.println(message);
-			} else if (Human.getName().equals("tanya")) {
+			} else if (object instanceof Woman) {
 				String message1 = scanner.next();
-				writer.println("                                                                                             "
-						+ Human.getName() + " " + Human.getAge());
+				writer.println("                                                                                 "
+						+ ((Human) object).getName() + " " + ((Human) object).getAge());
 				writer.println("                                                                                             "
 						+ message1);
 			}
